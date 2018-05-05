@@ -16,12 +16,15 @@ and token freshness (for accessing critical views)
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/flask-jwt-extended-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/flask-jwt-extended-feedstock)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/flask-jwt-extended-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/flask-jwt-extended-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/flask-jwt-extended/badges/version.svg)](https://anaconda.org/conda-forge/flask-jwt-extended)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/flask-jwt-extended/badges/downloads.svg)](https://anaconda.org/conda-forge/flask-jwt-extended)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-flask--jwt--extended-green.svg)](https://anaconda.org/conda-forge/flask-jwt-extended) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/flask-jwt-extended.svg)](https://anaconda.org/conda-forge/flask-jwt-extended) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/flask-jwt-extended.svg)](https://anaconda.org/conda-forge/flask-jwt-extended) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/flask-jwt-extended.svg)](https://anaconda.org/conda-forge/flask-jwt-extended) |
 
 Installing flask-jwt-extended
 =============================
