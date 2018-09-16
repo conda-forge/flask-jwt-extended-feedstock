@@ -1,6 +1,6 @@
 {% set name = "Flask-JWT-Extended" %}
-{% set version = "3.12.1" %}
-{% set sha256 = "869362804af1a4a2e8351cac4918092fefb8ab00463202cc97acca119571f871" %}
+{% set version = "3.13.0" %}
+{% set sha256 = "1a95c4a46e2e6012a4908c03c834ee8ebdd3ec694659e6274d63e26a637ac57b" %}
 
 
 package:
