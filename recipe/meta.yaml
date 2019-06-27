@@ -26,6 +26,8 @@ requirements:
     - flask
     - pyjwt
     - python
+    - six
+    - werkzeug >=0.14
 
 test:
   imports:
