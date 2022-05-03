@@ -1,6 +1,6 @@
 {% set name = "Flask-JWT-Extended" %}
-{% set version = "4.3.1" %}
-{% set sha256 = "ad6977b07c54e51c13b5981afc246868b9901a46715d9b9827898bfd916aae88" %}
+{% set version = "4.4.0" %}
+{% set sha256 = "3fe81504bdc91ad8f1cb975bd2d95ec601251f31bde184115e39fc7e6ed23ea6" %}
 
 
 package:
@@ -23,14 +23,19 @@ requirements:
     - python >=3.6
     - pip
   run:
-    - flask >=1.0,<3.0
+    - flask >=2.0,<3.0
     - pyjwt >=2.0,<3.0
     - python >=3.6
     - werkzeug >=0.14
+    - typing_extensions >=3.7.4
 
 test:
   imports:
     - flask_jwt_extended
+  requires:
+    - pip
+  commands:
+    - pip check
 
 about:
   home: https://github.com/vimalloc/flask-jwt-extended
