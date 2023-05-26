@@ -1,11 +1,11 @@
-About flask-jwt-extended
-========================
+About flask-jwt-extended-feedstock
+==================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/flask-jwt-extended-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/vimalloc/flask-jwt-extended
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/flask-jwt-extended-feedstock/blob/main/LICENSE.txt)
 
 Summary: A Flask JWT extension
 
