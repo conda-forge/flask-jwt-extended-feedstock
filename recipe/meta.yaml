@@ -1,6 +1,6 @@
 {% set name = "Flask-JWT-Extended" %}
-{% set version = "4.5.2" %}
-{% set sha256 = "ba56245ba43b71c8ae936784b867625dce8b9956faeedec2953222e57942fb0b" %}
+{% set version = "4.5.3" %}
+{% set sha256 = "061ef3d25ed5743babe4964ab38f36d870e6d2fd8a126bab5d77ddef8a01932b" %}
 
 
 package:
@@ -23,7 +23,7 @@ requirements:
     - python >=3.6
     - pip
   run:
-    - flask >=2.0,<3.0
+    - flask >=2.0,<4.0
     - pyjwt >=2.0,<3.0
     - python >=3.6
     - werkzeug >=0.14
