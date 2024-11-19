@@ -1,0 +1,56 @@
+context:
+  name: Flask-JWT-Extended
+  version: 4.7.0
+  sha256: be5785e2e3ef4d8773ba6d10247e78827dcf0b111efbfcd7a0794b5f7c750d90
+  python_min: "3.9"
+
+package:
+  name: ${{ name|lower }}
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name.replace('-', '_') | lower }}-${{ version }}.tar.gz
+  sha256: ${{ sha256 }}
+
+build:
+  number: 0
+  noarch: python
+  script: python -m pip install . -vv
+
+requirements:
+  host:
+    - python ${{ python_min }}
+    - setuptools
+    - pip
+  run:
+    - flask >=2.0,<4.0
+    - pyjwt >=2.0,<3.0
+    - python >=${{ python_min }}
+    - werkzeug >=0.14
+
+tests:
+  - python:
+      imports:
+        - flask_jwt_extended
+      pip_check: true
+  - script:
+      - python -c "import flask_jwt_extended"
+    requirements:
+      run:
+        - python ${{ python_min }}
+
+about:
+  license: MIT
+  license_file: LICENSE
+  summary: A Flask JWT extension
+  description: |
+    A Flask JWT extension that supports refresh tokens, blacklisting/revoking tokens,
+    and token freshness (for accessing critical views)
+  homepage: https://github.com/vimalloc/flask-jwt-extended
+
+extra:
+  recipe-maintainers:
+    - lvoliveira
+    - nicoddemus
+    - igortg
+    - synapticarbors
