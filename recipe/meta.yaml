@@ -1,6 +1,6 @@
 {% set name = "Flask-JWT-Extended" %}
-{% set version = "4.6.0" %}
-{% set sha256 = "9215d05a9413d3855764bcd67035e75819d23af2fafb6b55197eb5a3313fdfb2" %}
+{% set version = "4.7.0" %}
+{% set sha256 = "be5785e2e3ef4d8773ba6d10247e78827dcf0b111efbfcd7a0794b5f7c750d90" %}
 
 
 package:
@@ -9,7 +9,7 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_').lower() }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
