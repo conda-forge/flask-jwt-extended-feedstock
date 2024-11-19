@@ -12,7 +12,6 @@ Summary: A Flask JWT extension
 A Flask JWT extension that supports refresh tokens, blacklisting/revoking tokens,
 and token freshness (for accessing critical views)
 
-
 Current build status
 ====================
 

@@ -1,15 +1,14 @@
 context:
-  name: Flask-JWT-Extended
   version: 4.7.0
   sha256: be5785e2e3ef4d8773ba6d10247e78827dcf0b111efbfcd7a0794b5f7c750d90
   python_min: "3.9"
 
 package:
-  name: ${{ name|lower }}
+  name: flask-jwt-extended
   version: ${{ version }}
 
 source:
-  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name.replace('-', '_') | lower }}-${{ version }}.tar.gz
+  url: https://pypi.org/packages/source/f/flask-jwt-extended/flask_jwt_extended-${{ version }}.tar.gz
   sha256: ${{ sha256 }}
 
 build:
