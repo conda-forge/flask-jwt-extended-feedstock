@@ -1,7 +1,5 @@
 context:
   version: "4.7.1"
-  sha256: 8085d6757505b6f3291a2638c84d207e8f0ad0de662d1f46aa2f77e658a0c976
-  python_min: "3.9"
 
 package:
   name: flask-jwt-extended
@@ -9,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/f/flask-jwt-extended/flask_jwt_extended-${{ version }}.tar.gz
-  sha256: ${{ sha256 }}
+  sha256: 8085d6757505b6f3291a2638c84d207e8f0ad0de662d1f46aa2f77e658a0c976
 
 build:
   number: 0
   noarch: python
-  script: python -m pip install . -vv
+  script: python -m pip install . -vv --no-build-isolation --no-deps
 
 requirements:
   host:
@@ -32,11 +30,7 @@ tests:
       imports:
         - flask_jwt_extended
       pip_check: true
-  - script:
-      - python -c "import flask_jwt_extended"
-    requirements:
-      run:
-        - python ${{ python_min }}.*
+      python_version: ${{ python_min }}.*
 
 about:
   license: MIT
