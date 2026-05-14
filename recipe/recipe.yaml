@@ -1,5 +1,5 @@
 context:
-  version: "4.7.3"
+  version: 4.7.4
 
 package:
   name: flask-jwt-extended
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/f/flask-jwt-extended/flask_jwt_extended-${{ version }}.tar.gz
-  sha256: a8318a3d983d1f360724b901889f1947ffee418e2a3950b48e99c70923b6615e
+  sha256: 78fd0f460317facf3a0084a6457ffaf2f1dda9eefbd576f94cea35b0eadd5531
 
 build:
   number: 0
@@ -21,10 +21,9 @@ requirements:
     - pip
   run:
     - flask >=2.0,<4.0
-    - pyjwt >=2.0,<3.0
+    - pyjwt >=2.11.0,<3.0
     - python >=${{ python_min }}
     - werkzeug >=0.14
-
 tests:
   - python:
       imports:
